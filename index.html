@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>zoom.js</title>
+
+		<meta name="description" content="A minimal JavaScript API which enables zooming in on elements or rectangles in a document.">
+		<meta name="author" content="Hakim El Hattab">
+
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+
+	<body>
+
+		<div class="page-body">
+			<h2>Source</h2>
+			<p>All text is from the indespensable <a href="#">http://slipsum.com/</a></p>
+
+			<h2>I'm serious as a heart attack</h2>
+			<p>Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit. </p>
+
+		</div>
+
+		<script src="js/zoom.js"></script>
+		<script>
+			document.querySelector( '.page-body' ).addEventListener( 'click', function( event ) {
+				event.preventDefault();
+				zoom.to({ element: event.target });
+			} );
+		</script>
+
+	</body>
+</html>

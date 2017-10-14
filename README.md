@@ -1,7 +1,5 @@
 # jsZoom.js
 网页放大插件,主要针对的是容器,不单单是图片
-# js-zoom.js
-网页放大插件,主要针对的是容器,不单单是图片
 # zoom.js
 
 Enables a minimal JS API for zooming in on specific points or DOM elements.
